@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register Team</title>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/main.css">
+		<meta charset="UTF-8">
+		<meta name="Chang Kon Han" content="SQRL Team registration">
+		
+		<!-- Script tags. Load asynchronously -->
+		<script type"text/javascript" src="js/main.js" async></script>
+	</head>
+	<body>
+		<header id="header">
+			<div class="container justify-space-around">
+				<div id="logo">
+					<a href="index.html">
+						<img src="image/SQRL_logo_small.png" alt="sqrl logo"/>
+					</a>
+				</div>
+				<nav id="header-nav" class="container" role="navigation">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Schedule</a></li>
+						<li><a href="#">Ranking</a></li>
+						<li><a href="#">Results</a></li>
+						<li><a href="documentation.html">Documentation</a></li>
+						<li><a href="testing.html">Testing</a></li>
+					</ul>
+				</nav>
+				<div id="login-status">
+					Welcome Bob Nut! <span class="cursor-hover">Logout</span>
+				</div>
+			</div>
+		</header>
+		<div id="body-content">
+			<div class="content-wrapper">
+				<h1 class="wizard-font-large">Register Team</h1>
+				<div id="team-registration-container" class="container">
+					<div id="team-registration-faq">
+						<h1 class="underline">FAQ</h1>
+						<h2>Can I register for a team which doesn't have a complete roster?</h2>
+						<p>Yes, an incomplete team registration will be submitted and will later be matched with other incomplete members</p>
+						<h2>Why can't I specify my position/role in the team registration?</h2>
+						<p>The team registration only registers members of team on level. The team details and positions are determined by the members when the teams have been finalised</p>
+						<h2>Why can't I enter team name?</h2>
+						<p>Team names can be entered if you register with a complete team. Incomplete teams must
+						be matched with other members and team names can then be decided</p>
+					</div>
+					<div id="team-registration-form" class="container">
+						<div class="container">
+							<select id="team-registration-select">
+								<optgroup label="-- Select Level --">
+									<option value="kids">Kids (age 16 and under)</option>
+									<option value="adult_casual">Adult Casual (aged 17-34)</option>
+									<option value="adult_serious">Adult Serious (aged 17-34)</option>
+									<option value="seniors">Seniors (age 35+)</option>
+									<option value="legend">Legends</option>
+								</optgroup>
+							</select>
+						</div>
+						<div class="container">
+							<input id="team-registration-email" type="email" placeholder="Add e-mail address" required/>
+							<button id="team-registration-add" type="button">Add</button>
+						</div>
+						<div class="container">
+							<table id="team-registration-table">
+								<colgroup>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="2">Email Address</th>
+									</tr>
+								</thead>
+								<tbody id="team-registration-table-body"></tbody>
+							</table>
+						</div>
+						<div class="container">
+							<h2>Team name</h2>
+							<input id="team-registration-teamname" type="text" disabled/>
+						</div>
+						<div class="container">
+							<button id="team-registration-cancel" type="button">Cancel</button>
+							<button id="team-registration-submit" type="submit">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- modal/popup -->
+			<div id="modal-popup" class="modal">
+				<div class="modal-title"><span class="modal-title-message">message</span><span class="close-icon">x</span></div>
+				<div class="modal-body">Hello</div>
+				<div class="modal-footer"><button type="button">Ok</button></div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="container">
+				<div id="footer-nav" class="container" role="navigation">
+					<div class="link-grouping">
+						<h2 class="uppercase">SQRL</h2>
+						<ul>
+							<li><a href="index.html">Home</a>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Create Account</a></li>
+						</ul>
+					</div>
+					<div class="link-grouping">
+						<h2 class="uppercase">Matches</h2>
+						<ul>
+							<li><a href="#">Schedule</a></li>
+							<li><a href="#">Ranking</a></li>
+						</ul>
+					</div>
+					<div class="link-grouping">
+						<h2 class="uppercase">Game</h2>
+						<ul>
+							<li><a href="#">About Quidditch</a></li>
+							<li><a href="#">Rules</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="footer-image-container">
+					<img src="image/footer.png" alt="footer image"/>
+				</div>
+			</div>
+			<div>
+				<span>Copyright &copy SQRL 2015</span>
+			</div>
+		</footer>
+	</body>
+</html>

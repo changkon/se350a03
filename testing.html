@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SQRL - Quidditch League</title>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/main.css">
+		<meta charset="UTF-8">
+		<meta name="Chang Kon Han" content="UK Summer Quidditch Recreational League">
+
+		<!-- Script tags. Load asynchronously -->
+		<script type"text/javascript" src="js/main.js" async></script>
+	</head>
+	<body>
+		<header id="header">
+			<div class="container justify-space-around">
+				<div id="logo">
+					<a href="index.html">
+						<img src="image/SQRL_logo_small.png" alt="sqrl logo"/>
+					</a>
+				</div>
+				<nav id="header-nav" class="container" role="navigation">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Schedule</a></li>
+						<li><a href="#">Ranking</a></li>
+						<li><a href="#">Results</a></li>
+						<li><a href="documentation.html">Documentation</a></li>
+						<li><a href="testing.html">Testing</a></li>
+					</ul>
+				</nav>
+				<!--<input type="search" />-->
+				<div id="login-status">
+					Welcome Bob Nut! <span class="cursor-hover">Logout</span>
+				</div>
+			</div>
+		</header>
+		<div id="body-content">
+			<div class="content-wrapper">
+				<h1 class="wizard-font-large">Usability Testing</h1>
+				<h2>Testing Tasks</h2>
+				<p>There were several test tasks to test the team registration task.</p>
+				<ul>
+					<li>Apply for team just as yourself</li>
+					<li>Apply with 1 or more teammates for an incomplete</li>
+					<li>Apply for full team registration</li>
+				</ul>
+				<h2>Testing Observations and Results</h2>
+				<p>
+					The participant was able to quickly identify the register page button and go to the page. The participant completed the first two tasks quickly with no hesitations, however, 
+					the third task took longer and user identified mistake was made therefore had to read FAQ. Furthermore, the participant also tried error handling 
+					during the test to see how the system will react.
+				</p>
+				<p>
+					The user interface was not understood and the user committed a mistake. The system automatically adds it's email into
+					the team without needing the user to add its own teammate and you are only required to add teammate's email address.
+				</p>
+				<h2>Testing questions and feedback</h2>
+				<p>
+					The participant told me that adding the email address already was not intuitive. While the FAQ is visible, a visual indication should be shown to the user
+					instead of doing it behind the scenes. The participant suggested including the email entry already when a user enters the registration page.
+					The participant also suggested that more scenarios be added to the team registration submission such as checking if team name already is taken and if the added
+					teammate email address is not already in a team or have registered. The participant said having FAQ as progressive disclosure because the registration should be easy
+					enough without needing it. The feedback messages were said to be bland because it is using the default javascript alert function making the text too small and
+					difficult to view.
+				</p>
+				<p>
+					The positives from the website is that the colour scheme was nicely done and the website was aesthetic. The registration page was easy to navigate and if there was
+					a visual cue that email is currently added to the form, the team registration process is easy and intuitive.
+				</p>
+				<h2>Changes</h2>
+				<p>After the testing, several changes were made. From the feedback from the participant, positive features were also retained.</p>
+				<ul>
+					<li>
+						Visual indication to show the accounts email address is already added to the team registration.
+					</li>
+					<li>
+						Custom feedback message container box which is more visually appealing and is centred in the page.
+					</li>
+				</ul>
+				<p>Some changes were not made because of time constraints</p>
+				<ul>
+					<li>
+						Checking for more scenarios during team registration.
+					</li>
+					<li>
+						Putting FAQ as progressive disclosure.
+					</li>
+				</ul>
+				<h2>Follow up test</h2>
+				<p>
+					The participant completed the tasks quickly with no errors. Because the email address was added to the table, it provided the visual cue hence the task was said
+					to be more intuitive and easier because the user didn't have to read FAQ to complete the form.
+				</p>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="container">
+				<div id="footer-nav" class="container" role="navigation">
+					<div class="link-grouping">
+						<h2 class="uppercase">SQRL</h2>
+						<ul>
+							<li><a href="index.html">Home</a>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Create Account</a></li>
+						</ul>
+					</div>
+					<div class="link-grouping">
+						<h2 class="uppercase">Matches</h2>
+						<ul>
+							<li><a href="#">Schedule</a></li>
+							<li><a href="#">Ranking</a></li>
+						</ul>
+					</div>
+					<div class="link-grouping">
+						<h2 class="uppercase">Game</h2>
+						<ul>
+							<li><a href="#">About Quidditch</a></li>
+							<li><a href="#">Rules</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="footer-image-container">
+					<img src="image/footer.png" alt="footer image"/>
+				</div>
+			</div>
+			<div>
+				<span>Copyright &copy SQRL 2015</span>
+			</div>
+		</footer>
+	</body>
+</html>

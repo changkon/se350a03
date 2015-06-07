@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SQRL - Quidditch League</title>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/main.css">
+		<meta charset="UTF-8">
+		<meta name="Chang Kon Han" content="UK Summer Quidditch Recreational League">
+
+		<!-- Script tags. Load asynchronously -->
+		<script type"text/javascript" src="js/main.js" async></script>
+	</head>
+	<body>
+		<header id="header">
+			<div class="container justify-space-around">
+				<div id="logo">
+					<a href="index.html">
+						<img src="image/SQRL_logo_small.png" alt="sqrl logo"/>
+					</a>
+				</div>
+				<nav id="header-nav" class="container" role="navigation">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Schedule</a></li>
+						<li><a href="#">Ranking</a></li>
+						<li><a href="#">Results</a></li>
+						<li><a href="documentation.html">Documentation</a></li>
+						<li><a href="testing.html">Testing</a></li>
+					</ul>
+				</nav>
+				<!--<input type="search" />-->
+				<div id="login-status">
+					Welcome Bob Nut! <span class="cursor-hover">Logout</span>
+				</div>
+			</div>
+		</header>
+		<div id="body-content">
+			<div id="home-banner">
+				<div id="registration-promo">
+					<img src="image/test_homepage_banner.jpg" alt="homepage banner image" />
+					<div id="registration-promo-text">
+						<p>New season of SQRL</p>
+						<p>Registrations now open! Full team not required</p>
+					</div>
+					<a class="btn-large" href="teamregistration.html" role="button">Click here to register!</a>
+				</div>
+			</div>
+			<div class="content-wrapper">
+				<h1 class="wizard-font-large">News</h1>
+				<div class="news-block container">
+					<div class="news-item">
+						<div class="news-image">
+							<img src="image/news_item1.jpg" alt="last years champions" />
+						</div>
+						<div class="news-title">
+							<a href="#">Reviewing last years champions</a>
+						</div>
+						<div class="news-date">
+							18 May 2015
+						</div>
+					</div>
+					<div class="news-item">
+						<div class="news-image">
+							<img src="image/news_item2.jpg" alt="new quidditch venues" />
+						</div>
+						<div class="news-title">
+							<a href="#">New venues added for the 2015 season!</a>
+						</div>
+						<div class="news-date">
+							16 May 2015
+						</div>
+					</div>
+					<div class="news-item">
+						<div class="news-image">
+							<img src="image/news_item3.jpg" alt="SQRL mentioned in the local newspaper" />
+						</div>
+						<div class="news-title">
+							<a href="#">SQRL catching the public attention</a>
+						</div>
+						<div class="news-date">
+							15 May 2015
+						</div>
+					</div>
+					<div class="news-item">
+						<div class="news-image">
+							<img src="image/news_item4.jpg" alt="New season for SQRL" />
+						</div>
+						<div class="news-title">
+							<a href="#">SQRL season for 2015 announced</a>
+						</div>
+						<div class="news-date">
+							12 May 2015
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-separator"></div>
+			<div class="content-wrapper">
+				<div class="container align-items-flex-start">
+					<div class="half-width">
+						<h1 class="wizard-font-large">Schedule</h1>
+						<table>
+							<caption>Upcoming schedule for the 2015 season!</caption>
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Time</th>
+									<th>League</th>
+									<th>Division</th>
+									<th>Matchup</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>27/06</td>
+									<td>10:00</td>
+									<td>Legend</td>
+									<td>A</td>
+									<td>Batman <span class="table-vs">vs</span> Superman</td>
+								</tr>
+								<tr>
+									<td>27/06</td>
+									<td>11:00</td>
+									<td>Legend</td>
+									<td>B</td>
+									<td>NWA <span class="table-vs">vs</span> Gryffindor</td>
+								</tr>
+								<tr>
+									<td>27/06</td>
+									<td>11:00</td>
+									<td>Adult Casual</td>
+									<td>A</td>
+									<td>Broom <span class="table-vs">vs</span> Rage</td>
+								</tr>
+								<tr>
+									<td>27/06</td>
+									<td>14:00</td>
+									<td>Kids</td>
+									<td>A</td>
+									<td>Powerpuff <span class="table-vs">vs</span> Warriors</td>
+								</tr>
+								<tr>
+									<td>28/06</td>
+									<td>10:00</td>
+									<td>Kids</td>
+									<td>A</td>
+									<td>Legions <span class="table-vs">vs</span> Dolls</td>
+								</tr>
+								<tr>
+									<td>28/06</td>
+									<td>12:00</td>
+									<td>Senior</td>
+									<td>A</td>
+									<td>OldSchoolCool <span class="table-vs">vs</span> Friends</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="half-width">
+						<h1 class="wizard-font-large">Results</h1>
+						<div id="results-container">
+							<ul class="tabs">
+								<li class="tab-title current" data-tab="results-kids">Kids</li>
+								<li class="tab-title" data-tab="results-adult-casual">Adult Casual</li>
+								<li class="tab-title" data-tab="results-adult-serious">Adult Serious</li>
+								<li class="tab-title" data-tab="results-senior">Serious</li>
+								<li class="tab-title" data-tab="results-legends">Legends</li>
+							</ul>
+							<div class="tab-content">
+								  <div class="content current" id="results-kids">
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division A</div>
+											<div class="results-score">
+												<p>Relic <span class="results-team-score">140</span></p>
+												<p>Fire <span class="results-team-score">170</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division A</div>
+											<div class="results-score">
+												<p>Ember <span class="results-team-score">140</span></p>
+												<p>Ponies <span class="results-team-score">180</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">28/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division B</div>
+											<div class="results-score">
+												<p>Disc <span class="results-team-score">200</span></p>
+												<p>Mouse <span class="results-team-score">90</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division B</div>
+											<div class="results-score">
+												<p>Antec <span class="results-team-score">190</span></p>
+												<p>Cycle <span class="results-team-score">200</span></p>
+											</div>
+										</div>
+								  </div>
+								  <div class="content" id="results-adult-casual">
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division A</div>
+											<div class="results-score">
+												<p>2spooky <span class="results-team-score">250</span></p>
+												<p>Destiny <span class="results-team-score">170</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">12:00</div>
+											<div class="results-division">Division A</div>
+											<div class="results-score">
+												<p>Zeus <span class="results-team-score">200</span></p>
+												<p>Wands <span class="results-team-score">180</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">28/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division A</div>
+											<div class="results-score">
+												<p>Harry <span class="results-team-score">200</span></p>
+												<p>Sparta <span class="results-team-score">290</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division B</div>
+											<div class="results-score">
+												<p>Antec <span class="results-team-score">190</span></p>
+												<p>coolkids <span class="results-team-score">250</span></p>
+											</div>
+										</div>
+								  </div>
+								  <div class="content" id="results-adult-serious">
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division B</div>
+											<div class="results-score">
+												<p>Keys <span class="results-team-score">300</span></p>
+												<p>Moose <span class="results-team-score">250</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division A</div>
+											<div class="results-score">
+												<p>Cupcakes <span class="results-team-score">300</span></p>
+												<p>LG <span class="results-team-score">305</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">28/08</div>
+											<div class="results-time">9:00</div>
+											<div class="results-division">Division A</div>
+											<div class="results-score">
+												<p>Rattlesnake <span class="results-team-score">285</span></p>
+												<p>Phoenix <span class="results-team-score">250</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division B</div>
+											<div class="results-score">
+												<p>Stick2gether <span class="results-team-score">375</span></p>
+												<p>m4gic <span class="results-team-score">295</span></p>
+											</div>
+										</div>
+								  </div>
+								  <div class="content" id="results-senior">
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">14:00</div>
+											<div class="results-division">Division A</div>
+											<div class="results-score">
+												<p>Young <span class="results-team-score">150</span></p>
+												<p>Fire <span class="results-team-score">155</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division A</div>
+											<div class="results-score">
+												<p>kIngs <span class="results-team-score">220</span></p>
+												<p>lyfe <span class="results-team-score">180</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">28/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division B</div>
+											<div class="results-score">
+												<p>Noisemaker <span class="results-team-score">200</span></p>
+												<p>asdf <span class="results-team-score">175</span></p>
+											</div>
+										</div>
+								  </div>
+								  <div class="content" id="results-legends">
+  										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division A</div>
+											<div class="results-score">
+												<p>Lego <span class="results-team-score">385</span></p>
+												<p>Ice <span class="results-team-score">350</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division A</div>
+											<div class="results-score">
+												<p>Pirates <span class="results-team-score">300</span></p>
+												<p>4chang <span class="results-team-score">400</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">28/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division B</div>
+											<div class="results-score">
+												<p>Gus <span class="results-team-score">385</span></p>
+												<p>Greed <span class="results-team-score">345</span></p>
+											</div>
+										</div>
+										<div class="results">
+											<div class="results-date">27/08</div>
+											<div class="results-time">10:00</div>
+											<div class="results-division">Division B</div>
+											<div class="results-score">
+												<p>Antec <span class="results-team-score">190</span></p>
+												<p>Cycle <span class="results-team-score">200</span></p>
+											</div>
+										</div>
+								  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-separator"></div>
+			<div class="content-wrapper">
+				<h1 class="wizard-font-large">Blog</h1>
+				<div class="container">
+					<div class="blog-group">
+						<div class="blog-post">
+							<a href="#" class="blog-link">Why Quidditch is the next big sport</a>
+							<div class="blog-date">20 April 2015</div>
+						</div>
+						<div class="blog-post">
+							<a href="#" class="blog-link">How to find which position is for you</a>
+							<div class="blog-date">10 April 2015</div>
+						</div>
+						<div class="blog-post">
+							<a href="#" class="blog-link">5 Quidditch Myths Debunked</a>
+							<div class="blog-date">15 March 2015</div>
+						</div>
+					</div>
+					<div class="blog-group">
+						<div class="blog-post">
+							<a href="#" class="blog-link">What is Quidditch, really?</a>
+							<div class="blog-date">13 March 2015</div>
+						</div>
+						<div class="blog-post">
+							<a href="#" class="blog-link">How to become a good quidditch player</a>
+							<div class="blog-date">2 March 2015</div>
+						</div>
+						<div class="blog-post">
+							<a href="#" class="blog-link">Ultimate guide for quidditch beginners</a>
+							<div class="blog-date">25 February 2015</div>
+						</div>
+					</div>
+					<div class="blog-group">
+						<div class="blog-post">
+							<a href="#" class="blog-link">5 Mistakes Quidditch beginners make</a>
+							<div class="blog-date">15 February 2015</div>
+						</div>
+						<div class="blog-post">
+							<a href="#" class="blog-link">Tips from Legend players</a>
+							<div class="blog-date">11 February 2015</div>
+						</div>
+						<div class="blog-post">
+							<a href="#" class="blog-link">New Rules explained</a>
+							<div class="blog-date">1 February 2015</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" role="button">Read more</a>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="container">
+				<div id="footer-nav" class="container" role="navigation">
+					<div class="link-grouping">
+						<h2 class="uppercase">SQRL</h2>
+						<ul>
+							<li><a href="index.html">Home</a>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Create Account</a></li>
+						</ul>
+					</div>
+					<div class="link-grouping">
+						<h2 class="uppercase">Matches</h2>
+						<ul>
+							<li><a href="#">Schedule</a></li>
+							<li><a href="#">Ranking</a></li>
+						</ul>
+					</div>
+					<div class="link-grouping">
+						<h2 class="uppercase">Game</h2>
+						<ul>
+							<li><a href="#">About Quidditch</a></li>
+							<li><a href="#">Rules</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="footer-image-container">
+					<img src="image/footer.png" alt="footer image"/>
+				</div>
+			</div>
+			<div>
+				<span>Copyright &copy SQRL 2015</span>
+			</div>
+		</footer>
+	</body>
+</html>

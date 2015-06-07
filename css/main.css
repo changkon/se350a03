@@ -1,0 +1,632 @@
+/*
+ Author: Chang Kon Han
+ Colour Schemes: Analogous colour scheme. Colours inspired by colours of Gryffindor.
+ The colour scheme will be accompanied by white background.
+ Red: #CA171B
+ Yellow: #FCCE15
+ */
+
+/* Fonts */
+@font-face
+{
+	font-family: 'wizardfont';
+	src: url('../fonts/Wizards_Magic.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'sqrl-default';
+	src: url('../fonts/Geomanist-Regular.otf') format('opentype');
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+  font-family: 'sqrl-default';
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	font-size: 18px;
+}
+
+/* Make sticky footer */
+#body-content
+{
+	flex-grow: 1;
+}
+
+.container
+{
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+/* Helper classes to justify content */
+.justify-flex-start
+{
+	justify-content: flex-start;
+}
+
+.justify-flex-end
+{
+	justify-content: flex-end;
+}
+
+.justify-flex-center
+{
+	justify-content: center;
+}
+
+.justify-space-between
+{
+	justify-content: space-between;
+}
+
+.justify-space-around
+{
+	justify-content: space-around;
+}
+
+/* Helper classes for align-items */
+.align-items-flex-start
+{
+	align-items: flex-start;
+}
+
+/* Hover cursor effect */
+.cursor-hover
+{
+  cursor: pointer;
+}
+
+.uppercase
+{
+  text-transform: uppercase;
+}
+
+.underline
+{
+	text-decoration: underline;
+}
+
+.text-center
+{
+	text-align: center;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+a:hover
+{
+  transition-duration: 0.75s;
+}
+
+button
+{
+	border: none;
+	cursor: pointer;
+}
+
+a[role="button"],
+button
+{
+	font-size: 18px;
+	color: white;
+	background-color: #CA171B;
+	border-radius: 10px;
+	padding: 10px 15px;
+	box-shadow: 2px 4px #8D1012;
+}
+
+a[role="button"]:hover,
+button:hover
+{
+	background-color: #d44548;
+}
+
+a[role="button"].btn-large,
+button.btn-large
+{
+	font-size: 25px;
+	padding: 20px 25px;
+}
+
+.wizard-font-large
+{
+	font-family: 'wizardfont';
+	color: #CA171B;
+	font-size: 60px;
+}
+
+/* Div width values */
+.half-width
+{
+	width: 50%;
+}
+
+/* Tables */
+table
+{
+	border-collapse: collapse;
+	border: 2px solid;
+}
+
+table th
+{
+	background-color: #FCCE15;
+}
+
+table tr:nth-child(2n)
+{
+	background-color: #f2f2f2;
+}
+
+table tr:hover
+{
+	background-color: #FEF1BF;
+}
+
+table td,
+table th
+{
+	padding: 15px;
+}
+
+table caption
+{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+table thead th
+{
+	margin-bottom: 10px;
+	border-bottom: 5px solid black;
+}
+
+/* Content separator */
+.content-separator
+{
+	background-image: url("../image/content_separator.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 50px;
+}
+
+/* Modal */
+.modal
+{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	flex-direction: column;
+	background-color: white;
+	box-shadow: 0 0 5px black;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.modal-title,
+.modal-body,
+.modal-footer
+{
+	padding: 15px;
+}
+
+.modal-title
+{
+	font-size: 25px;
+	background-color: #CA171B;
+	color: white;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+}
+
+.modal-title .close-icon
+{
+	float: right;
+	color: white;
+}
+
+.modal-body
+{
+	border-bottom: 1px solid #919191;
+}
+
+.modal-footer
+{
+	text-align: right;
+}
+
+.modal-footer button
+{
+	padding: 10px 20px;
+	box-shadow: none;
+}
+
+/* Header css */
+#header,
+#footer
+{
+	/* First item on the start line and last item on end line */
+	/*justify-content: space-around;*/
+	background-color: #CA171B;
+	color: white;
+}
+
+/* Remove padding and margin for header and footer navigation links */
+#header-nav > ul,
+#footer-nav ul
+{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#logo a
+{
+  display: block;
+  color: white;
+}
+
+/* Make child unordered links inline-blocks in header */
+#header-nav > ul > li
+{
+  display: inline-block;
+}
+
+#header-nav
+{
+	justify-content: space-between;
+}
+
+/* Links in navigation. Header */
+#header-nav a
+{
+	color: white;
+	font-size: 1.5em;
+	margin: 0px 10px;
+}
+
+#header-nav a:hover
+{
+	color: #FCCE15;
+}
+
+#login-status .cursor-hover
+{
+  text-decoration: underline;
+}
+
+/* Footer */
+#footer
+{
+  padding: 30px 30px 30px 100px;
+  position: relative;
+}
+
+#footer a
+{
+  color: white;
+}
+
+#footer a:hover
+{
+  color: #FCCE15;
+}
+
+#footer-nav
+{
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+#footer-nav .link-grouping
+{
+  margin-right: 75px;
+}
+
+#footer-nav .link-grouping li
+{
+  padding: 5px 0px;
+}
+
+#footer > img
+{
+	position: absolute;
+	right: 5%;
+	top: 0;
+}
+
+#footer-image-container
+{
+	flex-grow: 1;
+	text-align: right;
+}
+
+/* body-content */
+#home-banner
+{
+	position: relative;
+}
+
+#registration-promo
+{
+	height: 600px;
+}
+
+#registration-promo > img
+{
+	width: 100%;
+}
+
+#registration-promo-text
+{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	font-size: 3vw;
+	color: white;
+	font-weight: bold;
+}
+
+#registration-promo-text > p:first-child
+{
+	margin-top: 0;
+	text-align: center;
+	padding: 10px;
+	background-color: rgba(252, 206, 21, 0.7);
+	color: black;
+}
+
+#registration-promo-text > p:nth-of-type(2)
+{
+	text-align: right;
+	margin-right: 135px;
+}
+
+#registration-promo > a[role="button"]
+{
+	position: absolute;
+	top: 60%;
+	left: 78%;
+}
+
+.content-wrapper
+{
+	margin: 50px 10%;
+}
+
+/* News items */
+.news-block
+{
+	justify-content: space-between;
+}
+
+.news-image
+{
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.news-title
+{
+	margin: 10px 0;
+}
+
+.news-date,
+.blog-date
+{
+	color: #666;
+	font-style: italic;
+}
+
+#team-registration-container
+{
+	align-items: stretch;
+}
+
+#team-registration-faq,
+#team-registration-form
+{
+	padding: 25px;
+}
+
+#team-registration-faq
+{
+	flex: 2;
+	background-color: #FCCE15;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+
+#team-registration-form
+{
+	background-color: #f2f2f2;
+	flex: 3;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	padding: 50px;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+#team-registration-form > *
+{
+	margin-bottom: 30px;
+}
+
+#team-registration-form input
+{
+	padding: 1% 5% 1% 2%;
+	font-size: 20px;
+	flex: 1;
+}
+
+#team-registration-form > .container
+{
+	width: 60%;
+}
+
+#team-registration-select
+{
+	flex: 1;
+	padding: 1%;
+	font-size: 1.5em;
+}
+
+#team-registration-email
+{
+	margin-right: 2%;
+}
+
+#team-registration-add
+{
+	width: 75px;
+}
+
+#team-registration-form h2,
+#team-registration-form button
+{
+	margin-right: 20px;
+}
+
+#team-registration-table
+{
+	width: 100%;
+	background-color: white;
+}
+
+#team-registration-table col:nth-of-type(1)
+{
+	width: 90%;
+}
+
+#team-registration-table col:nth-of-type(2)
+{
+	width: 10%;
+	text-align: center;
+	color: red;
+	cursor: pointer;
+}
+
+.close-icon
+{
+	cursor: pointer;
+	color: #CA171B;
+}
+
+/* Tabs */
+.tabs
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.tabs .tab-title
+{
+	list-style: none;
+	font-size: 22px;
+	padding: 10px 15px;
+	color: #222;
+	cursor: pointer;
+	background: none;
+}
+
+.tabs .tab-title.current
+{
+	background: #FCCE15;
+}
+
+.tab-content .content
+{
+	display: none;
+}
+
+.tab-content .content .results:nth-child(2n)
+{
+	background-color: #f2f2f2;
+}
+
+.tab-content .content .results:hover
+{
+	background-color: #FEF1BF;
+}
+
+.tab-content .content.current
+{
+	display: inherit;
+}
+
+#results-container
+{
+	border: 2px solid;
+}
+
+#results-container .tabs
+{
+	border-bottom: 5px solid;
+	background-color: #FDDE61;
+}
+
+.results
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 15px;
+}
+
+.results-date,
+.results-time,
+.results-division
+{
+	flex: 2;
+}
+
+.results-score
+{
+	flex: 3;
+}
+
+.results-score p
+{
+	margin: 0;
+}
+
+.results-team-score
+{
+	float: right;
+}
+
+/* Blog posts */
+.blog-post
+{
+	margin-bottom: 30px;
+}
+
+.blog-link
+{
+	font-size: 1.5em;
+}
+
+.blog-group
+{
+	margin-right: 30px;
+}
